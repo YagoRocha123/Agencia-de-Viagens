@@ -1,0 +1,150 @@
+:root {
+    --cor-fundo: #f4f4f4;
+    --cor-principal: #007bff;
+    --cor-secundaria: #343a40;
+    --cor-texto: #333;
+    --cor-hover: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: var(--cor-fundo);
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 10%px 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.titulo{
+    margin: auto;
+    display: block;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.titulo2{
+    margin: auto;
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+}
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.destinos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.styled-image{
+    width: 300px;
+}
+
+.destino {
+    margin: 10px;
+    text-align: justify;
+    width: 70%;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--cor-secundaria);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.botao {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.botao:hover {
+    background-color: #2980b9;
+}
+.botao:hover,
+.botao:focus{
+    background-color: var(--cor-secundaria);
+    transform: scale(1.05);
+}
+
+.hamburger{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .destinos {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav {
+      display: none;
+    }
+  
+    .nav.active{
+        display: block;
+    }
+    .hamburger {
+      display: block; 
+      cursor: pointer;
+    }
+  
+    .button {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
